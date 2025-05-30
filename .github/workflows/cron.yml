@@ -9,6 +9,9 @@ jobs:
   run-script:
     runs-on: ubuntu-latest
     environment: Prod
+    env:
+      BLSKY_HANDLE: ${{ secrets.BLSKY_HANDLE }}
+      BLSKY_APP_PASSWORD: ${{ secrets.BLSKY_APP_PASSWORD }}
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python
