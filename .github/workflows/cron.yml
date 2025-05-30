@@ -5,11 +5,10 @@ on:
     - cron: "0 * * * *" # Elke uur op het uur
   workflow_dispatch: # Handmatig starten mogelijk
 
-environment: Prod
-
 jobs:
   run-script:
     runs-on: ubuntu-latest
+    environment: Prod
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python
