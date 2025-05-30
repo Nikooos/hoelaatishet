@@ -6,8 +6,8 @@ from zoneinfo import ZoneInfo
 
 load_dotenv()
 
-BLSKY_HANDLE = os.environ.get('BLSKY_HANDLE')
-BLSKY_APP_PASSWORD = os.environ.get('BLSKY_APP_PASSWORD')
+BLSKY_HANDLE = os.getenv('BLSKY_HANDLE')
+BLSKY_APP_PASSWORD = os.getenv('BLSKY_APP_PASSWORD')
 
 now = datetime.now()
 now = datetime.now(ZoneInfo("Europe/Amsterdam"))
