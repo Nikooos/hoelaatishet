@@ -1,0 +1,22 @@
+name: Run script hourly
+
+on:
+  schedule:
+    - cron: "0 * * * *" # Elke uur op het uur
+  workflow_dispatch: # Handmatig starten mogelijk
+
+environment: Prod
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install python-dotenv atproto datetime
+      - name: Run script
+        run: python hoelaatishet.py
