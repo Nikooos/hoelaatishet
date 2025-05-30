@@ -13,11 +13,11 @@ now = datetime.now()
 now = datetime.now(ZoneInfo("Europe/Amsterdam"))
 current_hour = now.hour
 
-if 5 <= hour < 12:
+if 5 <= current_hour < 12:
     greeting = "Goedemorgen!"
-elif 12 <= hour < 18:
+elif 12 <= current_hour < 18:
     greeting = "Goedemiddag!"
-elif 18 <= hour < 22:
+elif 18 <= current_hour < 22:
     greeting = "Goedenavond!"
 else:
     greeting = "Goedenacht!"
