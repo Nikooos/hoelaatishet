@@ -13,6 +13,7 @@ now = datetime.now()
 now = datetime.now(ZoneInfo("Europe/Amsterdam"))
 current_hour = now.hour
 
+print("BLSKY_HANDLE:", BLSKY_HANDLE)
 print("Het is nu " + str(current_hour) + ":00 uur")
 
 post_text = f"Het is nu {current_hour}:00 uur #hoelaatishet"
