@@ -1,0 +1,11 @@
+name: Run test hourly
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Het script draait!"
