@@ -5,8 +5,8 @@ from datetime import datetime
 
 load_dotenv()
 
-BLSKY_HANDLE = os.getenv('BLSKY_HANDLE')
-BLSKY_APP_PASSWORD = os.getenv('BLSKY_APP_PASSWORD')
+BLSKY_HANDLE = os.environ.get('BLSKY_HANDLE')
+BLSKY_APP_PASSWORD = os.environ.get('BLSKY_APP_PASSWORD')
 
 print ("Bluesky handle:", BLSKY_HANDLE)
 print ("Bluesky app password:", BLSKY_APP_PASSWORD)
