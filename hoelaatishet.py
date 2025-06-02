@@ -1,7 +1,6 @@
 import os
 from dotenv import load_dotenv
 from atproto import Client
-from atproto.richtext import RichText
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
@@ -10,6 +9,7 @@ load_dotenv()
 BLSKY_HANDLE = os.getenv('BLSKY_HANDLE')
 BLSKY_APP_PASSWORD = os.getenv('BLSKY_APP_PASSWORD')
 
+now = datetime.now()
 now = datetime.now(ZoneInfo("Europe/Amsterdam"))
 current_hour = now.hour
 current_minute = now.minute
@@ -23,18 +23,27 @@ elif 18 <= current_hour < 22:
     greeting = "Goedenavond!"
 else:
     greeting = "Goedenacht!"
-print(f"{greeting} Het is nu {current_hour}:{minute_str} uur #hoelaatishet")
+print(greeting + " Het is nu " + str(current_hour) + ":" + minute_str + " uur")
 
 post_text = f"{greeting} Het is nu {current_hour}:{minute_str} uur #hoelaatishet"
 
-# Verbind met Bluesky
-client = Client()
-client.login(BLSKY_HANDLE, BLSKY_APP_PASSWORD)
+hashtag = "#hoelaatishet"
+start_index = post_text.index(hashtag)
+end_index = start_index + len(hashtag)
 
-# Gebruik RichText helper om automatisch facets te genereren
-rt = RichText(text=post_text)
-rt.detect_facets(client)  # detecteert hashtags en links
+facets = [{
+      "index": {
+        "byteStart": start_index,
+        "byteEnd": end_index
+      },
+      "features": [{
+        "$type": "app.bsky.richtext.facet#tag",
+        "tag": "hoelaatishet"
+      }]
+}]
 
-# Verstuur de post mét facet
-client.send_post(text=rt.text, facets=rt.facets)
-print(f"Geplaatst op Bluesky om {current_hour}:{minute_str}")
+bsky_client = Client()
+bsky_client.login(BLSKY_HANDLE, BLSKY_APP_PASSWORD)
+
+bsky_client.send_post(text=post_text, facets=facets)
+print("Geplaatst op Bluesky ", str(current_hour))
