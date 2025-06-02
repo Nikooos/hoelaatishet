@@ -13,6 +13,7 @@ now = datetime.now()
 now = datetime.now(ZoneInfo("Europe/Amsterdam"))
 current_hour = now.hour
 current_minute = now.minute
+minute_str = f"{current_minute:02d}"
 
 if 5 <= current_hour < 12:
     greeting = "Goedemorgen!"
@@ -22,9 +23,9 @@ elif 18 <= current_hour < 22:
     greeting = "Goedenavond!"
 else:
     greeting = "Goedenacht!"
-print(greeting + " Het is nu " + str(current_hour) + ":" + current_minute + " uur")
+print(greeting + " Het is nu " + str(current_hour) + ":" + minute_str + " uur")
 
-post_text = f"{greeting} Het is nu {current_hour}:{current_minute} uur #hoelaatishet"
+post_text = f"{greeting} Het is nu {current_hour}:{minute_str} uur #hoelaatishet"
 
 # Locate the position of the hashtag
 hashtag = "#hoelaatishet"
