@@ -1,7 +1,6 @@
 import os
 from dotenv import load_dotenv
-from atproto import Client
-from atproto.firehose.facets import Facet, FacetFeature, FacetFeatureTag
+from atproto import Client, models
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
@@ -28,15 +27,18 @@ print(greeting + " Het is nu " + str(current_hour) + ":" + minute_str + " uur")
 
 post_text = f"{greeting} Het is nu {current_hour}:{minute_str} uur #hoelaatishet"
 
-# Locate the position of the hashtag
 hashtag = "#hoelaatishet"
 start_index = post_text.index(hashtag)
 end_index = start_index + len(hashtag)
 
-# Define the hashtag facet
-facet = Facet(
-    index={'byteStart': start_index, 'byteEnd': end_index},
-    features=[FacetFeature(tag=FacetFeatureTag(tag="hoelaatishet"))]
+facet = models.AppBskyRichtextFacet(
+    index=models.AppBskyRichtextFacetMainTextSlice(
+        byteStart=start_index,
+        byteEnd=end_index
+    ),
+    features=[
+        models.AppBskyRichtextFacetFeatureTag(tag='hoelaatishet')
+    ]
 )
 
 bsky_client = Client()
