@@ -28,8 +28,9 @@ print(greeting + " Het is nu " + str(current_hour) + ":" + minute_str + " uur")
 post_text = f"{greeting} Het is nu {current_hour}:{minute_str} uur #hoelaatishet"
 
 hashtag = "#hoelaatishet"
-start_index = post_text.index(hashtag)
-end_index = start_index + len(hashtag)
+start_index = post_text.encode("utf-8").index(hashtag.encode("utf-8"))
+end_index = start_index + len(hashtag.encode("utf-8"))
+
 
 facets = [{
       "index": {
