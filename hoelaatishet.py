@@ -26,8 +26,19 @@ print(greeting + " Het is nu " + str(current_hour) + ":" + current_minute + " uu
 
 post_text = f"{greeting} Het is nu {current_hour}:{current_minute} uur #hoelaatishet"
 
+# Locate the position of the hashtag
+hashtag = "#hoelaatishet"
+start_index = post_text.index(hashtag)
+end_index = start_index + len(hashtag)
+
+# Define the hashtag facet
+facet = Facet(
+    index={'byteStart': start_index, 'byteEnd': end_index},
+    features=[FacetFeature(tag=FacetFeatureTag(tag="hoelaatishet"))]
+)
+
 bsky_client = Client()
 bsky_client.login(BLSKY_HANDLE, BLSKY_APP_PASSWORD)
 
-bsky_client.send_post(text=post_text)
+bsky_client.send_post(text=post_text, facets=[facet])
 print("Geplaatst op Bluesky ", str(current_hour))
