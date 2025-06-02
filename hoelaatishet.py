@@ -12,6 +12,7 @@ BLSKY_APP_PASSWORD = os.getenv('BLSKY_APP_PASSWORD')
 now = datetime.now()
 now = datetime.now(ZoneInfo("Europe/Amsterdam"))
 current_hour = now.hour
+current_minute = now.minute
 
 if 5 <= current_hour < 12:
     greeting = "Goedemorgen!"
@@ -21,9 +22,9 @@ elif 18 <= current_hour < 22:
     greeting = "Goedenavond!"
 else:
     greeting = "Goedenacht!"
-print(greeting + " Het is nu " + str(current_hour) + ":00 uur")
+print(greeting + " Het is nu " + str(current_hour) + ":" + current_minute + " uur")
 
-post_text = f"{greeting} Het is nu {current_hour}:00 uur #hoelaatishet"
+post_text = f"{greeting} Het is nu {current_hour}:{current_minute} uur #hoelaatishet"
 
 bsky_client = Client()
 bsky_client.login(BLSKY_HANDLE, BLSKY_APP_PASSWORD)
