@@ -1,6 +1,7 @@
 import os
 from dotenv import load_dotenv
 from atproto import Client
+from atproto.firehose.facets import Facet, FacetFeature, FacetFeatureTag
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
