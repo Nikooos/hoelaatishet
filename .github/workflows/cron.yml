@@ -2,8 +2,8 @@ name: Run script hourly
 
 on:
   schedule:
-    - cron: "0 * * * *" # Elke uur op het uur
-  workflow_dispatch: # Handmatig starten mogelijk
+    - cron: "0 * * * *"
+  workflow_dispatch:
 
 jobs:
   run-script:
@@ -14,11 +14,14 @@ jobs:
       BLSKY_APP_PASSWORD: ${{ secrets.BLSKY_APP_PASSWORD }}
     steps:
       - uses: actions/checkout@v3
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
       - name: Install dependencies
-        run: pip install python-dotenv atproto datetime
+        run: pip install -U python-dotenv atproto
+
       - name: Run script
         run: python hoelaatishet.py
