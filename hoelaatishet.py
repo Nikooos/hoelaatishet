@@ -67,14 +67,14 @@ print("consumer_secret:", TWITTER_API_SECRET)
 print("access_token:", TWITTER_ACCESS_TOKEN)
 print("access_token_secret:", TWITTER_ACCESS_SECRET)
 
-# client = tweepy.Client(
-#     bearer_token=TWITTER_BEARER_TOKEN,
-#     consumer_key=TWITTER_API_KEY,
-#     consumer_secret=TWITTER_API_SECRET,
-#     access_token=TWITTER_ACCESS_TOKEN,
-#     access_token_secret=TWITTER_ACCESS_SECRET
-# )
+client = tweepy.Client(
+    bearer_token=TWITTER_BEARER_TOKEN,
+    consumer_key=TWITTER_API_KEY,
+    consumer_secret=TWITTER_API_SECRET,
+    access_token=TWITTER_ACCESS_TOKEN,
+    access_token_secret=TWITTER_ACCESS_SECRET
+)
 
 
-# response = client.create_tweet(text=post_text)
-# print("✅ Tweet geplaatst! ID:", response.data['id'])
+response = client.create_tweet(text=post_text)
+print("✅ Tweet geplaatst! ID:", response.data['id'])
