@@ -50,16 +50,16 @@ facets = [{
       }]
 }]
 
-bsky_client = Client()
-bsky_client.login(BLSKY_HANDLE, BLSKY_APP_PASSWORD)
+# bsky_client = Client()
+# bsky_client.login(BLSKY_HANDLE, BLSKY_APP_PASSWORD)
 
-bsky_client.send_post(text=post_text, facets=facets)
-print("✅ Geplaatst op Bluesky ", str(current_hour))
+# bsky_client.send_post(text=post_text, facets=facets)
+# print("✅ Geplaatst op Bluesky ", str(current_hour))
 
-# only post tweets on even hours
-if current_hour % 2 != 0:
-    print(f"⏸️ Sla over: {current_hour} is een oneven uur.")
-    exit(0)
+# # only post tweets on even hours
+# if current_hour % 2 != 0:
+#     print(f"⏸️ Sla over: {current_hour} is een oneven uur.")
+#     exit(0)
 
 client = tweepy.Client(
     bearer_token=TWITTER_BEARER_TOKEN,
