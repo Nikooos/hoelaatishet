@@ -69,5 +69,12 @@ client = tweepy.Client(
     access_token_secret=TWITTER_ACCESS_SECRET
 )
 
+
+print("bearer_token:", TWITTER_BEARER_TOKEN)
+print("consumer_key:", TWITTER_API_KEY)
+print("consumer_secret:", TWITTER_API_SECRET)
+print("access_token:", TWITTER_ACCESS_TOKEN)
+print("access_token_secret:", TWITTER_ACCESS_SECRET)
+
 response = client.create_tweet(text=post_text)
 print("✅ Tweet geplaatst! ID:", response.data['id'])
