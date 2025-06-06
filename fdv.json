@@ -35,6 +35,22 @@
       "afbeelding": null
     }
   ],
+  "24-01": [
+    {
+      "naam": "Internaionale pindakaasdag",
+      "type": "internationaal",
+      "beschrijving": "Vandaag plaatsen we pindakaas even op een voetstuk. Omdat het gezond is, omdat noten een duurzame voedingsstof zijn en omdat pindakaas gewoon heel erg lekker is. Voor mij is vandaag een ode aan de pinda.",
+      "afbeelding": null
+    }
+  ],
+  "04-02": [
+    {
+      "naam": "Nationale frikandellendag",
+      "type": "nationaal",
+      "beschrijving": "Een dag waarop slagersknecht Gerrit de Vries uit Dordrecht in 1954 door een wijziging in de Warenwet zijn gehaktballen niet meer verkopen en er een worstvorm van maakte. De frikandel!",
+      "afbeelding": null
+    }
+  ],
   "14-02": [
     {
       "naam": "Valentijnsdag",
@@ -150,6 +166,28 @@
       "naam": "Eerste dag van de \"Fijne dag van...\" bluesky account",
       "type": "nationaal",
       "beschrijving": "Herdenking van de bevrijding van Nederland in 1945.",
+      "afbeelding": null
+    },
+    {
+      "naam": "Europese Tourettedag",
+      "type": "nationaal",
+      "beschrijving": "Op deze dag vragen we aandacht voor het syndroom van Gilles de la Tourette. Verdomme!",
+      "afbeelding": null
+    }
+  ],
+  "08-06": [
+    {
+      "naam": "Wereld Oceaanen dag",
+      "type": "internationaal",
+      "beschrijving": "Deze dag is bedoeld om het bewustzijn te vergroten over de benarde toestand van de oceanen.",
+      "afbeelding": null
+    }
+  ],
+  "12-06": [
+    {
+      "naam": "Internationale Dag tegen Kinderarbeid",
+      "type": "internationaal",
+      "beschrijving": "Dag waarop wereldwijd aandacht wordt gevraagd voor het beëindigen van kinderarbeid en het beschermen van de rechten van kinderen.",
       "afbeelding": null
     }
   ],
