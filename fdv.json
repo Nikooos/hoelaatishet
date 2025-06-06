@@ -1,0 +1,242 @@
+{
+  "01-01": [
+    {
+      "naam": "Nieuwjaarsdag",
+      "type": "feestdag",
+      "beschrijving": "Viering van het begin van het nieuwe jaar.",
+      "afbeelding": null
+    },
+    {
+      "naam": "Bloody Mary-dag",
+      "type": "internationaal",
+      "beschrijving": "Een dag gewijd aan de populaire cocktail Bloody Mary.",
+      "afbeelding": null
+    },
+    {
+      "naam": "Wereld Vredesdag (Rooms-Katholieke Kerk)",
+      "type": "religieus",
+      "beschrijving": "Dag waarop de Rooms-Katholieke Kerk oproept tot gebed en aandacht voor vrede, gevierd op 1 januari.",
+      "afbeelding": null
+    }
+  ],
+  "04-01": [
+    {
+      "naam": "Wereld Brailledag",
+      "type": "internationaal",
+      "beschrijving": "Een dag ter ere van Louis Braille en het belang van braille voor blinden en slechtzienden.",
+      "afbeelding": null
+    }
+  ],
+  "06-01": [
+    {
+      "naam": "Driekoningen",
+      "type": "christelijk",
+      "beschrijving": "Herdenking van de komst van de drie wijzen uit het Oosten bij het kindje Jezus.",
+      "afbeelding": null
+    }
+  ],
+  "14-02": [
+    {
+      "naam": "Valentijnsdag",
+      "type": "feestdag",
+      "beschrijving": "Een dag waarop geliefden elkaar extra aandacht geven met cadeaus, bloemen of kaarten.",
+      "afbeelding": null
+    }
+  ],
+  "21-02": [
+    {
+      "naam": "Internationale Moedertaaldag",
+      "type": "internationaal",
+      "beschrijving": "Dag ter bevordering van taaldiversiteit en meertaligheid.",
+      "afbeelding": null
+    }
+  ],
+  "08-03": [
+    {
+      "naam": "Internationale Vrouwendag",
+      "type": "internationaal",
+      "beschrijving": "Dag voor de rechten van vrouwen en het streven naar gelijkheid.",
+      "afbeelding": null
+    }
+  ],
+  "20-03": [
+    {
+      "naam": "Internationale Dag van het Geluk",
+      "type": "internationaal",
+      "beschrijving": "Een dag om het belang van geluk en welzijn te vieren.",
+      "afbeelding": null
+    }
+  ],
+  "21-03": [
+    {
+      "naam": "Internationale Dag tegen Racisme",
+      "type": "internationaal",
+      "beschrijving": "Dag om bewustzijn te creëren tegen racisme en discriminatie.",
+      "afbeelding": null
+    }
+  ],
+  "01-04": [
+    {
+      "naam": "1 april - Grapjassen dag",
+      "type": "traditioneel",
+      "beschrijving": "Dag van grappen en practical jokes.",
+      "afbeelding": null
+    }
+  ],
+  "07-04": [
+    {
+      "naam": "Wereldgezondheidsdag",
+      "type": "internationaal",
+      "beschrijving": "Een dag om aandacht te vragen voor wereldwijde gezondheidsproblemen.",
+      "afbeelding": null
+    }
+  ],
+  "20-04": [
+    {
+      "naam": "Eerste Paasdag",
+      "type": "feestdag",
+      "beschrijving": "Christelijke feestdag ter viering van de opstanding van Jezus Christus.",
+      "afbeelding": null
+    }
+  ],
+  "21-04": [
+    {
+      "naam": "Tweede Paasdag",
+      "type": "feestdag",
+      "beschrijving": "De dag na Eerste Paasdag, vaak een vrije dag in Nederland.",
+      "afbeelding": null
+    }
+  ],
+  "26-04": [
+    {
+      "naam": "Koningsdag",
+      "type": "nationaal",
+      "beschrijving": "Nationale feestdag ter ere van de verjaardag van Koning Willem-Alexander.",
+      "afbeelding": null
+    }
+  ],
+  "04-05": [
+    {
+      "naam": "Dodenherdenking",
+      "type": "nationaal",
+      "beschrijving": "Herdenking van alle Nederlandse oorlogsslachtoffers sinds de Tweede Wereldoorlog.",
+      "afbeelding": null
+    }
+  ],
+  "05-05": [
+    {
+      "naam": "Bevrijdingsdag",
+      "type": "nationaal",
+      "beschrijving": "Herdenking van de bevrijding van Nederland in 1945.",
+      "afbeelding": null
+    }
+  ],
+  "06-06": [
+    {
+      "naam": "Wereld Plaagdierendag",
+      "type": "internationaal",
+      "beschrijving": "Een dag om bewustzijn te creëren over de impact van plaagdieren en het belang van bestrijding.",
+      "afbeelding": null
+    },
+    {
+      "naam": "Internationale Dag van de Russische Taal",
+      "type": "internationaal",
+      "beschrijving": "Gevierd op de geboortedag van Aleksandr Poesjkin om meertaligheid en culturele diversiteit te promoten.",
+      "afbeelding": "https://www.beleven.org/feest/dag_van_de_russische_taal"
+    }
+  ],
+  "07-06": [
+    {
+      "naam": "Eerste dag van de \"Fijne dag van...\" bluesky account",
+      "type": "nationaal",
+      "beschrijving": "Herdenking van de bevrijding van Nederland in 1945.",
+      "afbeelding": null
+    }
+  ],
+  "14-06": [
+    {
+      "naam": "Wereld Bloeddonordag",
+      "type": "internationaal",
+      "beschrijving": "Dag om bewustzijn te creëren over bloeddonatie.",
+      "afbeelding": null
+    }
+  ],
+  "21-06": [
+    {
+      "naam": "Muziekdag",
+      "type": "nationaal",
+      "beschrijving": "Dag om muziek te vieren en te promoten.",
+      "afbeelding": null
+    },
+    {
+      "naam": "Eerste dag van de zomer",
+      "type": "seizoensgebonden",
+      "beschrijving": "Langste dag van het jaar en start van de zomer.",
+      "afbeelding": null
+    }
+  ],
+  "21-09": [
+    {
+      "naam": "Internationale Dag van de Vrede (VN)",
+      "type": "internationaal",
+      "beschrijving": "Wereldwijd uitgeroepen door de Verenigde Naties als dag van wapenstilstand en geweldloosheid.",
+      "afbeelding": null
+    }
+  ],
+  "04-10": [
+    {
+      "naam": "Werelddierendag",
+      "type": "internationaal",
+      "beschrijving": "Dag om aandacht te vragen voor dierenwelzijn.",
+      "afbeelding": null
+    }
+  ],
+  "31-10": [
+    {
+      "naam": "Halloween",
+      "type": "traditioneel",
+      "beschrijving": "Avond van verkleedpartijen en trick-or-treat.",
+      "afbeelding": null
+    }
+  ],
+  "05-11": [
+    {
+      "naam": "Sinterklaasintocht",
+      "type": "nationaal",
+      "beschrijving": "Officiële intocht van Sinterklaas in Nederland.",
+      "afbeelding": null
+    }
+  ],
+  "11-11": [
+    {
+      "naam": "Sint Maarten",
+      "type": "traditioneel",
+      "beschrijving": "Dag met lampionnenoptochten en liederen.",
+      "afbeelding": null
+    }
+  ],
+  "25-12": [
+    {
+      "naam": "Eerste Kerstdag",
+      "type": "feestdag",
+      "beschrijving": "Christelijke feestdag ter viering van de geboorte van Jezus Christus.",
+      "afbeelding": null
+    }
+  ],
+  "26-12": [
+    {
+      "naam": "Tweede Kerstdag",
+      "type": "feestdag",
+      "beschrijving": "De dag na Eerste Kerstdag, vaak een vrije dag in Nederland.",
+      "afbeelding": null
+    }
+  ],
+  "31-12": [
+    {
+      "naam": "Oudjaarsdag",
+      "type": "feestdag",
+      "beschrijving": "De laatste dag van het jaar, vaak gevierd met vuurwerk en feesten.",
+      "afbeelding": null
+    }
+  ]
+}
